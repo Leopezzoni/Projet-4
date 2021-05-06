@@ -1,3 +1,28 @@
+.navigation {
+    padding-right: 110px;
+}
+.navigation li {
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: "Protest";
+    src: url("fonts/protest.ttf") format(ttf);
+}
+.texte-centré {
+    text-align: center;
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    font-family: "protest";
+    font-weight: bold;
+    font-size: 1.6em;
+}
+#texte2 {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +30,14 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.partenaires {
+    text-align: center;
+}
+
+.list-partenaires {
+    list-style-type: none;
 }
 
 a,
@@ -363,6 +396,9 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+    .texte-centré {
+        max-width: 500px;
+    }
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -848,13 +884,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media all and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1029,14 +1065,26 @@ h4 {
 }
 
 @media (max-width: 400px) {
+    .texte-centré {
+        max-width: 280px;
+    }
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .link {
+        text-align: center;
     }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    p {
+        font-size: 16px;
+    }
+    .list-partenaires {
+        font-size: 16px;
     }
 }
