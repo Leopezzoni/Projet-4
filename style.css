@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "Protest";
-  src: url("fonts/protest.ttf") format(ttf);
+  src: url("fonts/protest.ttf");
 }
 .texte-centré {
   text-align: center;
@@ -747,12 +747,12 @@ h4 {
     max-width: 100%;
   }
 }
-@media all and (max-device-width: 1024px) and (orientation: landscape) {
+@media all and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 1.5) {
+@media (-webkit-min-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -769,9 +769,7 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -781,10 +779,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
-}
+
 @media (max-width: 767px) {
   .page-container {
     overflow-x: hidden;
